@@ -1,4 +1,4 @@
-import "./styles.css"
+
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Navbar(){
@@ -7,7 +7,7 @@ export default function Navbar(){
         <nav className="nav">
             <Link to="/" className="site-title">MB</Link>
             <ul>
-                <CustomLink to="/">Home</CustomLink>
+                <CustomLink to="/projects">Projecten</CustomLink>
                 <CustomLink to="/about">Over mij</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>
             </ul>

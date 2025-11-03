@@ -51,3 +51,112 @@ body {
     background-color: #777;
 }
 
+
+/* ===== Hero (Apple-style) ===== */
+.hero {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Sizes */
+.hero--small { min-height: 50vh; }
+.hero--medium { min-height: 70vh; }
+.hero--large { min-height: 100vh; }
+
+/* Background image + overlay */
+.hero__bg {
+    position: absolute;
+    inset: 0;
+}
+.hero__bg img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: #000;
+}
+
+/* Content */
+.hero__content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    max-width: 960px;
+}
+
+/* Alignment modifiers */
+.hero--align-center .hero__content { 
+    margin: 0 auto; 
+    text-align: center; 
+}
+.hero--align-left .hero__content { 
+    margin-right: auto; 
+    margin-left: 2rem; 
+    text-align: left; 
+}
+.hero--align-right .hero__content { 
+    margin-left: auto; 
+    margin-right: 2rem; 
+    text-align: right; 
+}
+
+/* Themes */
+.hero--light { color: #111; }
+.hero--dark { color: #fff; }
+
+.hero__title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+.hero__subtitle {
+    font-size: 1.125rem;
+    margin: 0 0 1.25rem 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.65rem 1.1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.btn--dark {
+    background: #111;
+    color: #fff;
+}
+.btn--dark:hover { background: #000; }
+
+.btn--light {
+    background: #fff;
+    color: #111;
+}
+.btn--light:hover { background: #f2f2f2; }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .hero--small { min-height: 45vh; }
+    .hero--medium { min-height: 60vh; }
+
+    .hero__title { font-size: 2rem; }
+    .hero__subtitle { font-size: 1rem; }
+
+    .hero--align-left .hero__content,
+    .hero--align-right .hero__content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: center;
+    }
+}
