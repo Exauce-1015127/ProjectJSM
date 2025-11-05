@@ -37,17 +37,9 @@ export default function Slider() {
     const swiperWrappedRef = useRef(null);
 
     function adjustMargin() {
-        const screenWidth = window.innerWidth;
-
+        // Ensure the slider is not offset; let CSS handle layout
         if (swiperWrappedRef.current) {
-            swiperWrappedRef.current.style.marginLeft =
-            screenWidth <= 520
-            ? "0px"
-            : screenWidth <= 650
-            ? "-50px"
-            : screenWidth <= 800
-            ? "-100px"
-            : "-150px"
+            swiperWrappedRef.current.style.marginLeft = "0px";
         }
     }
 
@@ -60,8 +52,8 @@ export default function Slider() {
     }, []);
 
     return(
-        <main>
-            <div className="container">
+        <section className="slider-root">
+            <div className="slider-container">
                 <Swiper
                     modules={[Pagination]}
                 grabCursor
@@ -108,6 +100,6 @@ export default function Slider() {
                     ))}
                 </Swiper>
             </div>
-        </main>
+        </section>
     );
 }

@@ -63,6 +63,8 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    /* add spacing between stacked hero sections */
+    margin-bottom: 2rem;
 }
 
 /* Sizes */

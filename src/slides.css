@@ -22,23 +22,29 @@ img {
     object-fit: cover;
 }
 
-main {
+.slider-root {
+    /* full-bleed across viewport, regardless of page container */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background: #03171d;
     font-family: 'Poppins', serif;
     overflow: hidden;
 }
 
-.container {
+.slider-container {
     width: 80%;
+    margin: 0 auto;
 }
 
 .swiper {
     width: 100%;
-    padding: 60px;
+    /* reduce horizontal padding to avoid extra right whitespace */
+    padding: 60px 20px;
 }
 
 .swiper-slide {
@@ -153,25 +159,19 @@ main {
 }
 
 .footer {
-    background-color: orange;
+
     position: absolute;
     bottom: 20px;
     left: var(--gap);
     width: calc(100% - var(--gap) * 2);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     opacity: 0;
 }
 
 .swiper-slide-active .footer {
     opacity: 1;
     transition-delay: 1s;
-    transition: 1s
-}
-
-.category {
-    display: flex;
+    transition: 1s;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -185,6 +185,7 @@ main {
     -webkit-backdrop-filter: blur(8px);
     background: rgba(255, 255, 255, 0.2);
     opacity: 0;
+    margin-right: 10px;
 }
 
 .swiper-slide-active .category span {
@@ -248,9 +249,10 @@ button:hover .label{
 
 .swiper-pagination-bullet-active {
     background-color: var(--accent-color);
-    width: 32px;
+    width: 30px;
     height: 12px;
     transition: all 0.8s ease-in-out;
+    border-radius: 5px;
 }
 
 @media (max-width: 800px) {
