@@ -1,0 +1,113 @@
+import React, { useRef, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "../slides.css";
+
+
+const slidesData = [
+    {
+        image: "/src/assets/skyline_asia.jpg",
+        title: "Voorbeeld project 1",
+        description: "Beschrijving van het eerste project",
+        categories: ["Zeeland", "Waterschap", "Dijk", "Bouw"]
+    },
+    {
+        image: "/src/assets/skyline_york.jpg",
+        title: "Voorbeeld project 2",
+        description: "Beschrijving van het tweede project",
+        categories: ["Dordrecht", "Gemeente", "Stedenbouw"]
+    },
+    {
+        image: "/src/assets/skyline_asia.jpg",
+        title: "Voorbeeld project 3",
+        description: "Beschrijving van het derde project",
+        categories: ["Test", "Voorbeeld"]
+    },
+    {
+        image: "/src/assets/skyline_york.jpg",
+        title: "Voorbeeld project 4",
+        description: "Beschrijving van het vierde project",
+        categories: ["Test2", "Voorbeeld2"]
+    },
+]
+
+export default function Slider() {
+    const swiperWrappedRef = useRef(null);
+
+    function adjustMargin() {
+        const screenWidth = window.innerWidth;
+
+        if (swiperWrappedRef.current) {
+            swiperWrappedRef.current.style.marginLeft =
+            screenWidth <= 520
+            ? "0px"
+            : screenWidth <= 650
+            ? "-50px"
+            : screenWidth <= 800
+            ? "-100px"
+            : "-150px"
+        }
+    }
+
+    useEffect(() => {
+        adjustMargin();
+        window.addEventListener("resize", adjustMargin);
+        return () => {
+            window.removeEventListener("resize", adjustMargin);
+        }
+    }, []);
+
+    return(
+        <main>
+            <div className="container">
+                <Swiper
+                    modules={[Pagination]}
+                grabCursor
+                initialSlide={2}
+                centeredSlides
+                slidesPerView="auto"
+                speed={800}
+                slideToClickedSlide
+                pagination={{clickable: true}}
+                breakpoints={{
+                    320: {spaceBetween: 40},
+                    650: {spaceBetween: 30},
+                    1000: {spaceBetween: 20},
+                }}
+                onSwiper={(swiper) => {
+                    swiperWrappedRef.current = swiper.wrapperEl;
+                }}>
+                    {slidesData.map((slide, index) => (
+                        <SwiperSlide key={index}>
+                            <img src={slide.image} alt={slide.title}/>
+                            <div className="title">
+                                <h1>{slide.title}</h1>
+                            </div>
+                            <div className="content">
+                                <div className="text-box">
+                                    <p>{slide.description}</p>
+                                </div>
+                                <div className="footer">
+                                    <div className="category">
+                                        {slide.categories.map((category, index) => (
+                                            <span key={index} style={{"--i": index +1}}>
+                                                {category}
+                                            </span>
+                                        ))}
+                                    </div>
+                                    <button className="button">
+                                        <span className="label">
+                                            Meer info
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+        </main>
+    );
+}

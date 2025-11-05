@@ -1,4 +1,5 @@
 import HeroCard from "../components/HeroCard";
+import Slider from "../components/Slider";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
         buttonText="Bekijk meer"
         buttonLink="/projects"
       />
+
+      <Slider/>
     </div>
   );
 }
