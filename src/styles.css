@@ -26,6 +26,7 @@ body {
     align-items: stretch;
     gap: 2rem;
     padding: 0 1rem;
+    font-family: 'Sunflower', serif;
 }
 
 .nav ul {
@@ -33,7 +34,8 @@ body {
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
+    font-size: 0.9rem;
 
 }
 
@@ -123,10 +125,12 @@ body {
     line-height: 1.1;
     font-weight: 600;
     margin: 0 0 0.5rem 0;
+    font-family: 'Sunflower', serif
 }
 .hero__subtitle {
     font-size: 1.125rem;
     margin: 0 0 1.25rem 0;
+    font-family: 'Poppins', serif
 }
 
 /* Buttons */
@@ -137,6 +141,7 @@ body {
     font-weight: 600;
     text-decoration: none;
     transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Poppins', serif
 }
 .btn--dark {
     background: #111;
