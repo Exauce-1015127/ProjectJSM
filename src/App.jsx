@@ -4,7 +4,6 @@ import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import Home from './pages/Home.jsx'
 import { Routes, Route } from 'react-router-dom'
-import HeroCard from './components/HeroCard.jsx'
 
 function App() {
     return (
