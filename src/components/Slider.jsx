@@ -8,13 +8,13 @@ import "../slides.css";
 
 const slidesData = [
     {
-        image: "/src/assets/skyline_asia.jpg",
+        image: "/public/Zeeland.png",
         title: "Voorbeeld project 1",
         description: "Beschrijving van het eerste project",
         categories: ["Zeeland", "Waterschap", "Dijk", "Bouw"]
     },
     {
-        image: "/src/assets/skyline_york.jpg",
+        image: "/public/Dordrecht.jpg",
         title: "Voorbeeld project 2",
         description: "Beschrijving van het tweede project",
         categories: ["Dordrecht", "Gemeente", "Stedenbouw"]

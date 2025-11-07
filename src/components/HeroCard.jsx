@@ -6,7 +6,7 @@ export default function HeroCard({
   buttonText,
   buttonLink,
   size = "medium", // small | medium | large
-  align = "center", // left | center | right
+  align = "left", // left | center | right
   theme = "light",  // light | dark (controls text/button contrast)
   overlay = true,
   overlayOpacity = 0.3,

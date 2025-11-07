@@ -31,13 +31,13 @@ img {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #03171d;
+    background: #111;
     font-family: 'Poppins', serif;
     overflow: hidden;
 }
 
 .slider-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 

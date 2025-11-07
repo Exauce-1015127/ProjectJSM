@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --gap: 25px;
+    --primary-color: #fff;
+    --accent-color: #ae3c68;
+}
+
 body {
     margin: 0;
 }
@@ -16,6 +22,7 @@ body {
 
 .site-title {
     font-size: 2rem;
+
 }
 
 .nav {
@@ -66,7 +73,7 @@ body {
     justify-content: center;
     overflow: hidden;
     /* add spacing between stacked hero sections */
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Sizes */

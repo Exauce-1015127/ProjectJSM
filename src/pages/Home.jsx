@@ -5,19 +5,28 @@ export default function Home() {
   return (
     <div>
       <HeroCard
-        image="/src/assets/skyline_asia.jpg"
-        title="Voorbeeldproject"
-        subtitle="Project met subtiele uitleg"
+        image="/public/kantoorwit.jpg"
+        title="JSM Adviesbureau"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonText="Meer informatie"
+        buttonLink="/projects"
+        textColor="text-white"
+      />
+
+        <HeroCard
+        image="/public/Zeeland.png"
+        title="Voorbeeld"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         buttonText="Meer informatie"
         buttonLink="/projects"
         textColor="text-white"
       />
 
       <HeroCard
-        image="/src/assets/skyline_york.jpg"
-        title="Tweede project"
-        subtitle="Supercharged by M3."
-        buttonText="Bekijk meer"
+        image="/public/dordrechtskyline.jpg"
+        title="Tweede voorbeeld"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.."
+        buttonText="Meer informatie"
         buttonLink="/projects"
       />
 
