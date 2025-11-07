@@ -1,0 +1,69 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: #ae3c68;
+}
+
+form{
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+    color: #333
+}
+
+form h2{
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Sunflower', serif;
+}
+
+form .form-input-box{
+    margin-top: 20px;
+}
+
+.form-input-box .field{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ddd;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.form-input-box .field.message{
+    height: 200px;
+    resize: None;
+}
+
+form button{
+    width: 100%;
+    height: 50px;
+    background: #ae3c68;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+form button:hover{
+    background: #fff;
+    color: #ae3c68;
+    border: 2px solid #ae3c68;
+}
