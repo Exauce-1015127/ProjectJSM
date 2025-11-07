@@ -59,11 +59,29 @@ form button{
     margin-top: 20px;
     font-weight: 600;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
+    transition: 1s;
 }
 
 form button:hover{
     background: #fff;
     color: #ae3c68;
     border: 2px solid #ae3c68;
+}
+
+/* Neutraliseer globale hover/animaties op de contact-button */
+.contact button {
+  transition: none !important;
+  box-shadow: none !important;
+  position: relative;   /* voor zekerheid */
+  overflow: hidden;     /* voorkomt uitwaaierende pseudo-elementen */
+}
+
+.contact button:hover,
+.contact button:focus {
+  box-shadow: none !important;
+}
+
+.contact button::before,
+.contact button::after {
+  content: none !important;
 }
