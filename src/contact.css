@@ -14,12 +14,15 @@ form{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 2rem;
-    color: #333
+    color: #333;
+    font-family: 'Poppins', serif;
+    text-align: left;
+
 }
 
 form h2{
     font-size: 30px;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     text-align: center;
     font-family: 'Sunflower', serif;
 }
@@ -39,11 +42,13 @@ form .form-input-box{
     font-size: 16px;
     color: #333;
     margin-top: 10px;
+    font-family: 'Poppins', serif;
 }
 
 .form-input-box .field.message{
     height: 200px;
     resize: None;
+    font-family: 'Poppins', serif;
 }
 
 form button{
