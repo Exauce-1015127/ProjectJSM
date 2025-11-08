@@ -1,6 +1,6 @@
 import HeroCard from "../components/HeroCard";
 import Slider from "../components/Slider";
-import "../styles.css"
+
 
 export default function Home() {
   return (
