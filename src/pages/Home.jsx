@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <HeroCard
-        image="/public/kantoorwit.jpg"
+        image="/kantoorwit.jpg"
         title="JSM Adviesbureau"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         buttonText="Meer informatie"
@@ -15,7 +15,7 @@ export default function Home() {
       />
 
         <HeroCard
-        image="/public/Zeeland.png"
+        image="/Zeeland.png"
         title="Voorbeeld"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         buttonText="Meer informatie"
@@ -24,7 +24,7 @@ export default function Home() {
       />
 
       <HeroCard
-        image="/public/dordrechtskyline.jpg"
+        image="/dordrechtskyline.jpg"
         title="Tweede voorbeeld"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.."
         buttonText="Meer informatie"

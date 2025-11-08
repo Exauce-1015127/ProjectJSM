@@ -8,13 +8,13 @@ import "../slides.css";
 
 const slidesData = [
     {
-        image: "/public/Zeeland.png",
+        image: "/Zeeland.png",
         title: "Voorbeeld project 1",
         description: "Beschrijving van het eerste project",
         categories: ["Zeeland", "Waterschap", "Dijk", "Bouw"]
     },
     {
-        image: "/public/Dordrecht.jpg",
+        image: "/Dordrecht.jpg",
         title: "Voorbeeld project 2",
         description: "Beschrijving van het tweede project",
         categories: ["Dordrecht", "Gemeente", "Stedenbouw"]
