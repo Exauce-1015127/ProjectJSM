@@ -18,7 +18,7 @@ const Contact = () => {
                     <label>Bericht</label>
                     <textarea placeholder="Type hier uw bericht..." id="" className="field message" required></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit">Verzenden</button>
             </form>
         </section>
     )
