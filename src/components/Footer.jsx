@@ -9,29 +9,18 @@ const Footer = () => {
                     <div className="footer-row">
                         {/*column 1 */}
                         <div className="footer-column">
-                            <h4>Projecten</h4>
-                            <ul className="footer-list">
-                                <li>Voorbeeld 1</li>
-                                <li>Voorbeeld 2</li>
-                                <li>Voorbeeld 3</li>
-                            </ul>
-                        </div>
-                        {/*column 2 */}
-                        <div className="footer-column">
-                            <h4>Over mij</h4>
-                            <ul className="footer-list">
-                                <li>Over mij</li>
-                                <li>Over mij</li>
-                                <li>Over mij</li>
-                            </ul>
-                        </div>
-                        {/*column 3 */}
-                        <div className="footer-column">
                             <h4>Contact</h4>
                             <ul className="footer-list">
                                 <li>06-22976551</li>
                                 <li>info@jsmadviesbureau.nl</li>
                                 <li>KvK-nr.: 73922781</li>
+                            </ul>
+                        </div>
+                        {/*column 2 */}
+                        <div className="footer-column">
+                            <h4>Social media</h4>
+                            <ul className="footer-list">
+                                <li>LinkedIn</li>
                             </ul>
                         </div>
                     </div>
