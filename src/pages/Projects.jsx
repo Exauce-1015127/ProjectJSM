@@ -1,3 +1,6 @@
+
 export default function Projects(){
-    return<h1>Projecten</h1>
+    return(
+    <h1>Projecten</h1>
+    )
 }
