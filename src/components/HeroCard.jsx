@@ -7,9 +7,9 @@ export default function HeroCard({
   buttonLink,
   size = "medium", // small | medium | large
   align = "left", // left | center | right
-  theme = "light",  // light | dark (controls text/button contrast)
+  theme = "dark",  // light | dark (controls text/button contrast)
   overlay = true,
-  overlayOpacity = 0.3,
+  overlayOpacity = 0.5,
 }) {
   const themeButtonClass = theme === "dark" ? "btn--light" : "btn--dark";
 
