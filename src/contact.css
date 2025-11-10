@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-    background: #ae3c68;
+    background: #f1f1f1;
 }
 
 form{
@@ -54,7 +54,7 @@ form .form-input-box{
 form button{
     width: 100%;
     height: 50px;
-    background: #ae3c68;
+    background: #4E5F8C;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -69,8 +69,8 @@ form button{
 
 form button:hover{
     background: #fff;
-    color: #ae3c68;
-    border: 2px solid #ae3c68;
+    color: #4E5F8C;
+    border: 2px solid #4E5F8C;
 }
 
 /* Neutraliseer globale hover/animaties op de contact-button */

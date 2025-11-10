@@ -53,7 +53,11 @@ export default function Slider() {
 
     return(
         <section className="slider-root">
+
             <div className="slider-container">
+                <div className="slider-title">
+                    <h2>Projecten</h2>
+                </div>
                 <Swiper
                     modules={[Pagination]}
                 grabCursor

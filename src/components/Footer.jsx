@@ -20,7 +20,14 @@ const Footer = () => {
                         <div className="footer-column">
                             <h4>Social media</h4>
                             <ul className="footer-list">
-                                <li>LinkedIn</li>
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/micha-beto-msc-2b25515/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >LinkedIn
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

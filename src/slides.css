@@ -4,7 +4,7 @@
 :root {
     --gap: 25px;
     --primary-color: #fff;
-    --accent-color: #ae3c68;
+    --accent-color: #4E5F8C;
 }
 
 *,
@@ -31,7 +31,7 @@ img {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #111;
+    background: #333;
     font-family: 'Poppins', serif;
     overflow: hidden;
 }
@@ -303,4 +303,13 @@ button:hover .label{
         font-size: 0.7rem;
         padding: 5px 12px;
     }
+}
+
+.slider-title {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Sunflower', serif;
+    text-align: center;
 }

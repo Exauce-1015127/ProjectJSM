@@ -7,7 +7,6 @@ export default function Navbar(){
         <nav className="nav">
             <Link to="/" className="site-title">JSM Adviesbureau</Link>
             <ul>
-                <CustomLink to="/projects">Projecten</CustomLink>
                 <CustomLink to="/about">Over mij</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>
             </ul>
