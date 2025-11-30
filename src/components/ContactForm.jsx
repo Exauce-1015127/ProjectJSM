@@ -22,14 +22,14 @@ const Contact = () => {
     if(data.success){
       Swal.fire({
         icon: "success",
-        title: "Success!",
-        text: "Your message has been sent successfully!",
+        title: "Succes!",
+        text: "Uw bericht is succesvol verzonden!",
       });
     }else{
       Swal.fire({
         icon: "error",
         title: "Error!",
-        text: "Something went wrong! Please try again.",
+        text: "Er ging iets fout! Probeer het a.u.b. opnieuw.",
       });
     }
   };
