@@ -1,5 +1,6 @@
 import {React, useState} from 'react'
 import "../contact.css"
+import Swal from 'sweetalert2'
 
 
 const Contact = () => {
@@ -18,6 +19,19 @@ const Contact = () => {
 
     const data = await response.json();
     setResult(data.success ? "Success!" : "Error");
+    if(data.success){
+      Swal.fire({
+        icon: "success",
+        title: "Success!",
+        text: "Your message has been sent successfully!",
+      });
+    }else{
+      Swal.fire({
+        icon: "error",
+        title: "Error!",
+        text: "Something went wrong! Please try again.",
+      });
+    }
   };
 
     return (
@@ -36,8 +50,7 @@ const Contact = () => {
                     <label>Bericht</label>
                     <textarea placeholder="Type hier uw bericht..." id="" className="field message" name='message' required></textarea>
                 </div>
-                <button type="submit">Verzenden</button>
-                <p>{result}</p>
+                <button type="submit" className="contact__button">Verzenden</button>
             </form>
         </section>
     )
