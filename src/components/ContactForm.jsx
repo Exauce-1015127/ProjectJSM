@@ -1,24 +1,43 @@
-import React from 'react'
+import {React, useState} from 'react'
 import "../contact.css"
 
+
 const Contact = () => {
+
+    const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "133109b6-f829-415d-aebe-60ffe06a8bcc");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "Success!" : "Error");
+  };
+
     return (
         <section className="contact">
-            <form>
+            <form onSubmit={onSubmit}>
                 <h2>Contact formulier</h2>
                 <div className="form-input-box">
                     <label>Volledige Naam</label>
-                    <input type="text" className="field" placeholder="Type hier uw naam..." required/>
+                    <input type="text" className="field" placeholder="Type hier uw naam..." name='name' required/>
                 </div>
                 <div className="form-input-box">
                     <label>Email</label>
-                    <input type="email" className="field" placeholder="Type hier uw email..." required/>
+                    <input type="email" className="field" placeholder="Type hier uw email..." name='email' required/>
                 </div>
                 <div className="form-input-box">
                     <label>Bericht</label>
-                    <textarea placeholder="Type hier uw bericht..." id="" className="field message" required></textarea>
+                    <textarea placeholder="Type hier uw bericht..." id="" className="field message" name='message' required></textarea>
                 </div>
                 <button type="submit">Verzenden</button>
+                <p>{result}</p>
             </form>
         </section>
     )
