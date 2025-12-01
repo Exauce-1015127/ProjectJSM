@@ -7,15 +7,17 @@ export default function About(){
         <>
         <div>
             <ImageCard
-                image="/kantoorwit.jpg"
-                title="Test Naam"
-                subtitle="Functie"
+                image="/JSMBanner2.png"
+                title=""
+                subtitle=""
             />
         </div>
         <div>
             <TextCard
-                title="Test titel"
-                subtitle="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui."
+                title="Over mij"
+                subtitle="Ik ben een ervaren zelfstandige professional met een sterk ontwikkelde omgevingssensitiviteit en gevoel voor politiek-bestuurlijke belangen. In alles wat ik doe, geloof ik in het vinden van een aanvaardbaar evenwicht. Mijn overtuiging is dat alles met elkaar in verbinding staat. Een mismatch tussen verwachtingen en realiteit kan leiden tot onder andere onderlinge irritaties, wantrouwen, (juridische) strijd en politiek-maatschappelijk onrust. Door mijn opgedane kennis en ervaring aan zowel opdrachtgevers (overheden)- als opdrachtnemerskant (aannemers), ben ik beter in staat de uitdagingen waar beide partijen mee te maken hebben in projecten te doorgronden, de issues te overzien en sneller te anticiperen op mogelijke kansen en risico’s.
+
+Ik bied klanten advies op maat bij de aanpak van dilemma’s in de menselijke interacties zonder daarbij de doelstellingen van projecten en/of programma’s uit het oog te verliezen."
             />
         </div>
         <div>

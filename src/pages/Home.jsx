@@ -8,7 +8,7 @@ export default function Home() {
       <HeroCard
         image="/kantoorwit.jpg"
         title="JSM Adviesbureau"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        subtitle="Één doel, één passie - omgevingsmanagement"
         buttonText="Meer informatie"
         buttonLink="/about"
         textColor="text-white"

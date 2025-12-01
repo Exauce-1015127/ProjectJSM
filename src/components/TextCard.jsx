@@ -2,7 +2,7 @@
 export default function TextCard({
   title,
   subtitle,
-  size = "small", // small | medium | large
+  size = "medium", // small | medium | large
   align = "left", // left | center | right
   theme = "light",  // light | dark (controls text/button contrast)
   overlay = true,

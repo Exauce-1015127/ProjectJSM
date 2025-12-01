@@ -7,7 +7,7 @@ export default function ImageCard({
   align = "left", // left | center | right
   theme = "light",  // light | dark (controls text/button contrast)
   overlay = true,
-  overlayOpacity = 0.3,
+  overlayOpacity = 0,
 }) {
   const themeButtonClass = theme === "dark" ? "btn--light" : "btn--dark";
 
