@@ -19,7 +19,7 @@ export default function Home() {
         title="Voorbeeld"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         buttonText="Meer informatie"
-        buttonLink="/projects"
+        buttonLink="https://www.google.com"
         textColor="text-white"
       />
 
@@ -28,7 +28,7 @@ export default function Home() {
         title="Tweede voorbeeld"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.."
         buttonText="Meer informatie"
-        buttonLink="/projects"
+        buttonLink="https://www.google.com"
       />
 
       <Slider/>
