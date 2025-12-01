@@ -10,7 +10,7 @@ export default function Home() {
         title="JSM Adviesbureau"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         buttonText="Meer informatie"
-        buttonLink="/projects"
+        buttonLink="/about"
         textColor="text-white"
       />
 

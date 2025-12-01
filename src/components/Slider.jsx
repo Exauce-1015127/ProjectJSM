@@ -11,25 +11,29 @@ const slidesData = [
         image: "/Zeeland.png",
         title: "Voorbeeld project 1",
         description: "Beschrijving van het eerste project",
-        categories: ["Zeeland", "Waterschap", "Dijk", "Bouw"]
+        categories: ["Zeeland", "Waterschap", "Dijk", "Bouw"],
+        buttonlink: "https://www.google.com"
     },
     {
         image: "/Dordrecht.jpg",
         title: "Voorbeeld project 2",
         description: "Beschrijving van het tweede project",
-        categories: ["Dordrecht", "Gemeente", "Stedenbouw"]
+        categories: ["Dordrecht", "Gemeente", "Stedenbouw"],
+        buttonlink: "https://www.google.com"
     },
     {
         image: "/src/assets/skyline_asia.jpg",
         title: "Voorbeeld project 3",
         description: "Beschrijving van het derde project",
-        categories: ["Test", "Voorbeeld"]
+        categories: ["Test", "Voorbeeld"],
+        buttonlink: "https://www.google.com"
     },
     {
         image: "/src/assets/skyline_york.jpg",
         title: "Voorbeeld project 4",
         description: "Beschrijving van het vierde project",
-        categories: ["Test2", "Voorbeeld2"]
+        categories: ["Test2", "Voorbeeld2"],
+        buttonlink: "https://www.google.com"
     },
 ]
 
@@ -93,11 +97,17 @@ export default function Slider() {
                                             </span>
                                         ))}
                                     </div>
-                                    <button className="button">
+                                    <a
+                                        className="button"
+                                        href={slide.buttonlink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`Meer info over ${slide.title}`}
+                                    >
                                         <span className="label">
                                             Meer info
                                         </span>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </SwiperSlide>
