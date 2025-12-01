@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // components/HeroCard.jsx
 export default function HeroCard({
   image,
@@ -24,9 +26,9 @@ export default function HeroCard({
         {title && <h1 className="hero__title">{title}</h1>}
         {subtitle && <p className="hero__subtitle">{subtitle}</p>}
         {buttonText && (
-          <a href={buttonLink} className={`btn ${themeButtonClass}`}>
+          <Link to={buttonLink} className={`btn ${themeButtonClass}`}>
             {buttonText}
-          </a>
+          </Link>
         )}
       </div>
     </section>
