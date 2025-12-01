@@ -22,14 +22,14 @@ const slidesData = [
         buttonlink: "https://www.google.com"
     },
     {
-        image: "/src/assets/skyline_asia.jpg",
+        image: "/skyline_asia.jpg",
         title: "Voorbeeld project 3",
         description: "Beschrijving van het derde project",
         categories: ["Test", "Voorbeeld"],
         buttonlink: "https://www.google.com"
     },
     {
-        image: "/src/assets/skyline_york.jpg",
+        image: "/skyline_york.jpg",
         title: "Voorbeeld project 4",
         description: "Beschrijving van het vierde project",
         categories: ["Test2", "Voorbeeld2"],
