@@ -60,7 +60,7 @@ export default function Slider() {
 
             <div className="slider-container">
                 <div className="slider-title">
-                    <h2>Projecten</h2>
+                    <h2>Referenties</h2>
                 </div>
                 <Swiper
                     modules={[Pagination]}

@@ -1,5 +1,4 @@
 import Navbar from './Navbar.jsx'
-import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import Home from './pages/Home.jsx'
 import Footer from './components/Footer.jsx'
@@ -55,7 +54,6 @@ function App() {
 
                     <Routes>
                         <Route path="/" element={<Home/>}/>
-                        <Route path="/about" element={<About/>}/>
                         <Route path="/contact" element={<Contact/>}/>
                         {/* Catch-all route - this will match any path not matched above */}
                         <Route path="*" element={<NotFound />} />
