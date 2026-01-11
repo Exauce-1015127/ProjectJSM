@@ -9,8 +9,8 @@ export default function Home() {
         image="/kantoorwit.jpg"
         title="JSM Adviesbureau"
         subtitle="Één doel, één passie - omgevingsmanagement"
-        buttonText="Meer informatie"
-        buttonLink="/about"
+        buttonText="Contact"
+        buttonLink="/contact"
         textColor="text-white"
       />
 
@@ -25,17 +25,9 @@ export default function Home() {
         ben ik beter in staat de uitdagingen waar beide partijen mee te maken hebben in projecten te doorgronden, de issues
         te overzien en sneller te anticiperen op mogelijke kansen en risico’s. Ik bied klanten advies op maat bij de aanpak
         van dilemma’s in de menselijke interacties zonder daarbij de doelstellingen van projecten en/of programma’s uit het oog te verliezen."
-        buttonText="LinkedIN"
+        buttonText="LinkedIn"
         buttonLink="https://www.linkedin.com/in/micha-beto-msc-2b25515/"
         textColor="text-white"
-      />
-
-      <HeroCard
-        image="/dordrechtskyline.jpg"
-        title="Tweede voorbeeld"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.."
-        buttonText="Meer informatie"
-        buttonLink="https://www.google.com"
       />
 
       <Slider/>
