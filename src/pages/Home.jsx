@@ -7,8 +7,8 @@ export default function Home() {
     <div>
       <HeroCard
         image="/JSMLogoBanner3.png"
-        title="JSM Adviesbureau"
-        subtitle="Één doel, één passie - omgevingsmanagement"
+        title="Omgevingsmanagement"
+        subtitle="Één doel, één passie"
         buttonText="Contact"
         buttonLink="/contact"
         textColor="text-white"
