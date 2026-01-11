@@ -15,7 +15,7 @@ export default function Home() {
       />
 
         <HeroCard
-        image="/Zeeland.png"
+        image="/test2bannerMB.png"
         title="Voorbeeld"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         buttonText="Meer informatie"
