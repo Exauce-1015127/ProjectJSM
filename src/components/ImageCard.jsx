@@ -12,7 +12,7 @@ export default function ImageCard({
   const themeButtonClass = theme === "dark" ? "btn--light" : "btn--dark";
 
   return (
-    <section className={`hero hero--${size} hero--align-${align} hero--${theme}`}>
+    <section className={`hero hero--image hero--${size} hero--align-${align} hero--${theme}`}>
       <div className="hero__bg">
         <img src={image} alt={title} />
         {overlay && <div className="hero__overlay" style={{ opacity: overlayOpacity }} />}

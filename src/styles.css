@@ -191,3 +191,24 @@ body {
 .content-wrap {
     flex: 1;
 }
+
+/* ===== Image-only hero ===== */
+.hero--image {
+    min-height: auto;
+    height: auto;
+}
+
+.hero--image .hero__content {
+    display: none;
+}
+
+.hero--image .hero__bg {
+    position: relative;
+    aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 768px) {
+    .hero--image .hero__bg {
+        aspect-ratio: 4 / 3;
+    }
+}
