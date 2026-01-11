@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <HeroCard
-        image="/JSMLogoBanner2wit.png"
+        image="/JSMLogoBanner3.png"
         title="JSM Adviesbureau"
         subtitle="Één doel, één passie - omgevingsmanagement"
         buttonText="Contact"
