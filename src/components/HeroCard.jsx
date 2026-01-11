@@ -11,7 +11,7 @@ export default function HeroCard({
   align = "right", // left | center | right
   theme = "dark",  // light | dark (controls text/button contrast)
   overlay = true,
-  overlayOpacity = 0.5,
+  overlayOpacity = 0.1,
 }) {
   const themeButtonClass = theme === "dark" ? "btn--light" : "btn--dark";
 
